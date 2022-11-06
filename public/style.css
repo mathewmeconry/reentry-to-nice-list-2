@@ -1,0 +1,71 @@
+body {
+  background: #456;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+button {
+  background-color: #1E792C;
+  color: white
+}
+
+button:disabled {
+  background-color: #1E792C;
+  color: #ccc
+}
+
+a {
+  color: #0abf26;
+}
+
+#errors {
+  color: #ca0808;
+  font-weight: bold;
+}
+
+.tree-1 {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 15px solid transparent;
+  border-bottom-color: green;
+  border-radius: 80px;
+}
+.tree-2 {
+  width: 0;
+  margin-top: -35px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 30px solid transparent;
+  border-bottom-color: green;
+  border-radius: 80px;
+}
+
+.tree-3 {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -95px;
+  border: 45px solid transparent;
+  border-bottom-color: green;
+  border-radius: 80px;
+}
+.foot{
+  z-index: -1;
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  border: 5px solid transparent;
+  border-color: #753000;
+ 
+}
+
+
+

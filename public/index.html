@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nice Validator</title>
+    <script>
+      function checkIfNice() {
+        fetch("/isNice")
+          .then(async (data) => {
+            document.getElementById("response").innerHTML = await data.text();
+          })
+          .catch((err) => {
+            document.getElementById("errors").innerHTML = err;
+          });
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="center">
+      <h1 id="title" class="center">Nice Validator V2</h1>
+      <div class="tree">
+        <div class="tree-1"></div>
+        <div class="tree-2"></div>
+        <div class="foot"></div>
+        <div class="tree-3"></div>
+      </div>
+      <br />
+      <p></p>
+      <br />
+      <p id="niceYet">
+        <button id="niceYet-btn" class="center" onClick="checkIfNice()">
+          Am I nice?
+        </button>
+      </p>
+      <p id="errors"></p>
+      <p id="response"></p>
+      <br />
+      <br />
+      <p id="infos">
+        <h3>Challenge Informations</h3>
+        <p>
+          To make your start easier, Santa created you a wallet and funded it with 1.5 ETH. <br>
+          To get into the nice list you need to spend 100 SANTA. <br>
+          You can buy SANTA at the SantaCoin address for an exchange rate of 1 ETH = 1 SANTA.
+        </p>
+        <p>SantaCoin address: 
+          <span id="santacoin-address">##SANTACOIN-ADDR##</span>
+        </p>
+        <p>NiceListV2 address: 
+          <span id="nicelistv2-address">##NICELISTV2-ADDR##</span>
+        </p>
+        <p>Your private key:
+          <span id="privatekey-address">##PRIVATE-KEY##</span>
+        </p>
+        <p><a href="/SantaCoin.sol">SantaCoin.sol (SourceCode)</a></p>
+        <p><a href="/NiceListV2.sol">NiceListV2.sol (SourceCode)</a></p>
+      </p>
+    </div>
+  </body>
+</html>
