@@ -29,3 +29,8 @@ You need to setup an attacker contract in order to exploit the reentrancy attack
 The flag `HV22{__N1c3__You__ARe__Ind33d__}` (hardcoded) is exactly 32 bytes long which is the same lenght as an Ethereum private key.  
 Get the public key for this private key and check the goerli testnet for the address (https://goerli.etherscan.io/address/0x65cCa9C197f6cF1e38628E4dA7305D924466e4fc).  
 There you'll find a transaction with the hidden flag in the data parameter (https://goerli.etherscan.io/tx/0xb86d27740bec51d186353a5a9d472dcab6ca122becf129d8840c181f5d6de912).
+
+## Flags
+
+`HV22{__N1c3__You__ARe__Ind33d__}` (Challenge)
+`HV22{W31hN4Cht5m4Nn_&C0._KG}` (Hidden)
