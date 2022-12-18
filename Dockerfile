@@ -20,6 +20,7 @@ COPY --chown=appuser:appuser ./contracts/SantaCoin.sol /app/public/SantaCoin.sol
 COPY --chown=appuser:appuser ./public /app/public
 COPY --chown=appuser:appuser ./scripts/start.ts /app/scripts/start.ts
 COPY --chown=appuser:appuser ./package.json /app/package.json
+COPY --chown=appuser:appuser ./package-lock.json /app/package-lock.json
 COPY --chown=appuser:appuser ./hardhat.config.ts /app/hardhat.config.ts
 COPY --chown=appuser:appuser ./tsconfig.json /app/tsconfig.json
 
