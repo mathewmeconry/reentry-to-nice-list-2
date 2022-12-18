@@ -101,7 +101,7 @@ contract NiceListV2 {
     // @param address user Which user buys in
     // @param uint256 amount Amount of coins sent
     function _buyIn(address user, uint256 amount) private {
-        uint256 userBuyInAmount = buyIns[user] += amount;
+        uint256 userBuyInAmount = buyIns[user] + amount;
         if (
             userBuyInAmount > buyInAmount - 1 &&
             niceListV2[user] != christmasTimestamp
